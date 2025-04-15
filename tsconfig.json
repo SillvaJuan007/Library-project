@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                       // Defina como ES6 ou superior
+      "module": "commonjs",                  // Utilize o sistema de módulos commonjs
+      "esModuleInterop": true,               // Permite importações de módulos comuns
+      "skipLibCheck": true,                  // Ignora a verificação de tipos nas bibliotecas
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",                    // Pasta onde os arquivos compilados serão armazenados
+      "rootDir": "./src",                    // Pasta de origem dos arquivos TypeScript
+      "experimentalDecorators": true,        // Habilita o uso de decoradores (necessário para TypeORM)
+      "emitDecoratorMetadata": true          // Permite emitir metadados dos decoradores
+    },
+    "include": ["src/**/*.ts"],  // Incluir todos os arquivos TypeScript dentro da pasta src
+    "exclude": ["node_modules"]  // Excluir node_modules
+  }
+  
