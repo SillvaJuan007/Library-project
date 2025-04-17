@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn,Column} from "typeorm";
 
 @Entity("booksid")
 
-export class id {
+export class Rental {
 @PrimaryGeneratedColumn("uuid")
 id:string
 
@@ -13,6 +13,6 @@ price: number;
 tenant: string;
 
 @Column()
-payment: string;
+paymentMethod: string; // pode ser "pix", "boleto", "dinheiro", etc.
 
 }

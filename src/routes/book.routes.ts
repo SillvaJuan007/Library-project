@@ -10,6 +10,5 @@ app.post("/book", async(req, res) => {
 const repo = AppDataSource.getRepository(Book);
 const book = repo.create(req.body);
 await repo.save(book);
-return res.status(201).json(book);
 
 });

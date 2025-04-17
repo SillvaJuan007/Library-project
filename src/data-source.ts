@@ -3,7 +3,7 @@ import { DataSource } from "typeorm";
 import { Person } from "./entities/person";
 import { Book } from "./entities/book";
 import { Copy } from "./entities/copy";
-import {Rent}from "./entities/rent";
+import {Rental}from "./entities/rental";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
